@@ -149,5 +149,4 @@ English (fluent) · Polish (working knowledge) · Hindi (native) · German (basi
 ---
 
 <sub>This profile README mirrors my academic site,
-[dr-manish-das.github.io](https://dr-manish-das.github.io/), which is built with Jekyll and the
-[al-folio](https://github.com/alshedivat/al-folio) theme.</sub>
+[dr-manish-das.github.io](https://dr-manish-das.github.io/).</sub>

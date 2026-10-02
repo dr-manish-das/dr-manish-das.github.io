@@ -12,7 +12,6 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Positronium imaging and medical PET research with the J-PET scanner at the Jagiellonian University.
 footer_text: >
   Manish Das &middot; Jagiellonian University, Krak&oacute;w.
-  Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: positronium imaging, PET, J-PET, medical imaging, nuclear physics, Jagiellonian University # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.png # site favicon: an image filename in /assets/img/, or an emoji of 4 characters or fewer to render as an inline SVG data URI
