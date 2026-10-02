@@ -33,7 +33,7 @@ latest_posts:
 ## About me
 
 I am a doctoral researcher at the **Jagiellonian University** in Kraków, working in the
-[J-PET](https://jpet.if.uj.edu.pl/) group of the Department of Experimental Particle Physics and
+[J-PET](https://koza.if.uj.edu.pl/pet) group of the Department of Experimental Particle Physics and
 Applications. My research focuses on **positronium imaging** — a new medical imaging modality that
 uses the lifetime of positronium atoms as a probe of the submolecular structure and oxygenation of
 living tissue.

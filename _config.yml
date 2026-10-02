@@ -15,8 +15,8 @@ footer_text: >
   Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: positronium imaging, PET, J-PET, medical imaging, nuclear physics, Jagiellonian University # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
-apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
+icon: favicon.png # site favicon: an image filename in /assets/img/, or an emoji of 4 characters or fewer to render as an inline SVG data URI
+apple_touch_icon: apple-touch-icon.png # 180x180 PNG in /assets/img/ for iOS home-screen bookmarks; Safari ignores the inline-SVG emoji favicon, so this needs a real raster image
 
 url: https://dr-manish-das.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
