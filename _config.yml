@@ -101,7 +101,7 @@ posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 1000px # main content column width; also drives the profile image `sizes` hint
+max_width: 800px # main content column width; also drives the profile image `sizes` hint
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org

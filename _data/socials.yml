@@ -6,7 +6,7 @@ github_username: dr-manish-das
 linkedin_username: manish-das-645898209
 facebook_id: manish.das.90
 # university account is not public-facing; reachable via the J-PET group page instead
-rss_icon: true # comment this line to hide the RSS icon
+rss_icon: false # comment this line to hide the RSS icon
 cv_pdf: /assets/pdf/Linkedin_profile.pdf # downloadable CV (PDF)
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
