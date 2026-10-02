@@ -1,0 +1,4 @@
+THEME=al_folio_core
+THEME_SASS=C:/Users/Satyam Tiwari/.local/share/gem/ruby/3.4.0/gems/al_folio_core-1.0.15/_sass
+LOADPATH[0]=C:/Users/Satyam Tiwari/Desktop/Manish_Das_Website/dr-manish-das.github.io/_sass dir=true
+LOADPATH[1]=C:/Users/Satyam Tiwari/.local/share/gem/ruby/3.4.0/gems/al_folio_core-1.0.15/_sass dir=true

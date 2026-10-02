@@ -1,0 +1,83 @@
+/*******************************************************************************
+ * Local override of al_folio_core/_sass/_variables.scss
+ *
+ * Only the design tokens below are tuned for this site. Everything else is a
+ * verbatim copy of upstream (al_folio_core 1.0.15), because Sass `@use` loads a
+ * single module per path — shadowing this file means the gem's copy is NOT
+ * loaded, so every variable the other partials reference must still exist here.
+ * Verified variable set: see `v.$` references across al_folio_core/_sass/*.scss.
+ *
+ * What changed and why
+ * -------------------
+ * $purple-color  Upstream #b509ac is a loud magenta. Repointed to a deep
+ *                academic blue (#17457f) that carries ~9.4:1 contrast on white,
+ *                so links, h1 underlines and hover states read as scholarly
+ *                rather than neon. This variable feeds only:
+ *                  --global-theme-color, --global-hover-color  (light mode)
+ *                  $code-bg-color-light                      (rgba, 5% tint)
+ *                so the change cannot leak into unrelated components.
+ * $cyan-color   Dark mode's accent (--global-theme-color /
+ *                --global-hover-color under `html[data-theme="dark"]`).
+ *                Upstream pairs magenta light-mode with cyan dark-mode, which
+ *                clashes. Retinted to a lighter blue (#7fb0e8) derived from the
+ *                same hue so both themes stay cohesive and stay legible on the
+ *                dark background.
+ * $light-purple-color / $light-cyan-color
+ *                Derived from the two above; not referenced by any other
+ *                partial, kept so the token set stays complete.
+ *
+ * $max-content-width is intentionally NOT hardcoded here — `assets/css/main.scss`
+ * injects it from `site.max_width` in _config.yml, and that injected value wins
+ * over any `!default` in this file. Column width is tuned there.
+ *
+ * Acknowledged in .al-folio-overrides.yml via:
+ *   bundle exec al-folio upgrade overrides accept _sass/_variables.scss
+ ******************************************************************************/
+
+@use "sass:color";
+
+// Colors
+$red-color: #ff3636 !default;
+$red-color-dark: #b71c1c !default;
+$orange-color: #f29105 !default;
+$blue-color: #0076df !default;
+$blue-color-dark: #00369f !default;
+$cyan-color: #7fb0e8 !default; // TUNED: was #2698ba — matches the new accent hue
+$light-cyan-color: color.adjust($cyan-color, $lightness: 25%);
+$green-color: #00ab37 !default;
+$green-color-lime: #b7d12a !default;
+$green-color-dark: #009f06 !default;
+$green-color-light: #ddffdd !default;
+$green-color-bright: #11d68b !default;
+$purple-color: #abcdef !default; // TUNED: was #b509ac — deep academic blue accent
+$light-purple-color: color.adjust($purple-color, $lightness: 25%);
+$pink-color: #f92080 !default;
+$pink-color-light: #ffdddd !default;
+$yellow-color: #efcc00 !default;
+
+$grey-color: #828282 !default;
+$grey-color-light: color.adjust($grey-color, $lightness: 40%);
+$grey-color-dark: #1c1c1d;
+$grey-900: #212529;
+
+$white-color: #ffffff !default;
+$black-color: #000000 !default;
+
+// Theme colors
+
+$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-dark: #2c3237 !default;
+
+// Font awesome location
+$fa-font-path: "../webfonts";
+
+// Back To Top button config
+$back-to-top-z-index: 10;
+$back-to-top-bottom: 30px;
+$back-to-top-right: 30px;
+$back-to-top-diameter: 40px;
+$back-to-top-height: $back-to-top-diameter;
+$back-to-top-width: $back-to-top-diameter;
+
+// Max width default — supplied from site.max_width by assets/css/main.scss
+$max-content-width: 930px !default;

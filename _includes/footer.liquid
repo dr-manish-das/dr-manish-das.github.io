@@ -1,0 +1,31 @@
+{% comment %}
+  Local override of al_folio_core/_includes/footer.liquid.
+
+  Why this exists: upstream renders an unconditional copyright bar
+  ("© Copyright <year> <name>. <footer_text>"). It has no config flag — neither
+  `footer_text` nor `footer_fixed` can suppress it — so the only way to drop it
+  is to shadow the include.
+
+  What changed: nothing is rendered. The page simply ends after the content.
+
+  Upstream reference (al_folio_core 1.0.15):
+    {% capture footer_contents %}
+      &copy; Copyright {{ site.time | date: '%Y' }}
+      {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}. {{ site.footer_text }}
+      ...
+    {% endcapture %}
+    {% if site.footer_fixed %}
+      <footer class="fixed-bottom" role="contentinfo"> ...
+    {% else %}
+      <footer class="sticky-bottom mt-5" role="contentinfo"> ...
+    {% endif %}
+
+  To restore: delete this file. To reinstate a minimal footer instead, render a
+  <footer> element with just {{ site.footer_text }}.
+
+  Note: `body` carries `padding-bottom: 70px` whenever `footer_fixed: true`, so
+  the page keeps a little breathing room below the content. That is intentional.
+
+  Acknowledged in .al-folio-overrides.yml via:
+    bundle exec al-folio upgrade overrides accept _includes/footer.liquid
+{% endcomment %}
