@@ -7,7 +7,7 @@ nav: true
 nav_order: 6
 ---
 
-<style> header.post-header { display: none !important; }   .navbar-brand.title { display: none !important; } </style>
+<style> header.post-header { display: none !important; }    </style>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">

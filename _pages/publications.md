@@ -7,7 +7,7 @@ nav: true
 nav_order: 1
 ---
 
-<style> header.post-header { display: none !important; }   .navbar-brand.title { display: none !important; }
+<style> header.post-header { display: none !important; }   
 </style>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -117,7 +117,7 @@ nav_order: 1
     margin-top: 0.25rem;
   }
   html[data-theme='dark'] .metric-sub { color: #6b7280; }
-  .navbar-brand.title { display: none !important; }
+  
 </style>
 
 <!-- METRICS WIDGET -->
