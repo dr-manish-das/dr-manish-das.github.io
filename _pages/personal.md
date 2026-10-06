@@ -191,10 +191,7 @@ nav_order: 5
   <p class="personal-desc">
     I am a huge believer in maintaining a balance between the lab and the world outside. 
     I love travelling ✈️, exploring new places, and making great friends along the way.
-    <br><br>
-    <span class="invite-highlight">
-      Invite me for a talk, and let's go grab some beers afterwards! 🍻
-    </span>
+    
   </p>
 
   <a href="mailto:manish.das@doctoral.uj.edu.pl" class="fun-cta" data-aos="zoom-in" data-aos-delay="200" id="beer-btn">

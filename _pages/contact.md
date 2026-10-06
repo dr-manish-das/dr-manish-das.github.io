@@ -193,6 +193,8 @@ nav_order: 6
       <h1 class="contact-title">Let's start a conversation.</h1>
       <p class="contact-desc">
         Whether you want to discuss research collaborations, invite me for a talk, or just say hello, my inbox is always open.
+        <br><br>
+        <strong>Invite me for a talk, and let's go grab some beers afterwards! 🍻</strong>
       </p>
     </div>
 
