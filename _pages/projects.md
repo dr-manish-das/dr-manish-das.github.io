@@ -123,6 +123,7 @@ nav_order: 4
 
 <div class="projects-header" data-aos="fade-in" data-aos-duration="1000">
   <h1 class="phd-title">My PhD Work</h1>
+  <p class="projects-intro">My PhD work is divided into two parts:</p>
 </div>
 
 <div class="thesis-flow">
