@@ -6,7 +6,8 @@ nav: true
 nav_order: 5
 ---
 
-<style> header.post-header { display: none !important; }   .navbar-brand.title { display: none !important; } </style>
+<style> header.post-header { display: none !important; }    
+  </style>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -181,7 +182,8 @@ nav_order: 5
   }
   html[data-theme='dark'] .fun-cta:hover { box-shadow: 0 20px 35px -10px rgba(248,250,252,0.3); }
   .fun-cta i { margin-left: 0.75rem; font-size: 1.3rem; }
-</style>
+
+  </style>
 
 <div class="personal-header" data-aos="fade-down" data-aos-duration="1000">
   <h1 class="personal-title">Beyond Work</h1>
@@ -224,11 +226,103 @@ nav_order: 5
 
 </div>
 
+
+  <style>
+  /* Acknowledgement Letter */
+  .acknowledgement-letter {
+    max-width: 800px;
+    margin: 8rem auto 4rem auto;
+    background: #fdfbf7;
+    border-radius: 8px;
+    padding: 5rem 4rem;
+    box-shadow: 
+      0 20px 40px rgba(0,0,0,0.06), 
+      0 1px 3px rgba(0,0,0,0.05),
+      inset 0 0 40px rgba(0,0,0,0.02);
+    border-left: 3px solid #d1d5db;
+    position: relative;
+    overflow: hidden;
+  }
+  html[data-theme="dark"] .acknowledgement-letter {
+    background: #1f2937;
+    border-left-color: #4b5563;
+    box-shadow: 
+      0 20px 40px rgba(0,0,0,0.3), 
+      inset 0 0 40px rgba(0,0,0,0.2);
+  }
+
+  .acknowledgement-letter::before {
+    content: '“';
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    font-size: 15rem;
+    font-family: Georgia, serif;
+    color: rgba(0,0,0,0.04);
+    line-height: 1;
+  }
+  html[data-theme="dark"] .acknowledgement-letter::before {
+    color: rgba(255,255,255,0.03);
+  }
+
+  .letter-title {
+    font-size: 2.2rem;
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    color: #111827;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  html[data-theme="dark"] .letter-title { color: #f9fafb; }
+
+  .letter-content {
+    font-size: 1.15rem;
+    line-height: 2;
+    color: #374151;
+    font-family: 'Georgia', serif;
+    position: relative;
+    z-index: 2;
+  }
+  html[data-theme="dark"] .letter-content { color: #d1d5db; }
+
+  .letter-content p {
+    margin-bottom: 1.8rem;
+    text-indent: 2.5rem;
+    text-align: justify;
+  }
+  .letter-content p:last-child {
+    margin-bottom: 0;
+  }
+  </style>
+
+
+  <div class="acknowledgement-letter" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100">
+    <h2 class="letter-title">Acknowledgements</h2>
+    <div class="letter-content">
+      <p>I would like to express my deepest gratitude to my supervisors, Prof. Paweł Moskal, Prof. Ewa Stępień, and Dr. Sushil Sharma, for their invaluable guidance, patience, and technical expertise throughout my PhD journey, and for being like a family away from home. I am especially grateful to Dr. Sushil Sharma for his exceptional supervision, for introducing me to the field of research, and for his constant support, both academic and personal. His guidance, encouragement, and willingness to help at any time have meant far more to me than words can express. I would also like to sincerely thank Dr. Reimund Bayerlein from University of California, Davis for his excellent supervision and for introducing me to the field of medical imaging research.</p>
+
+      <p>My sincere thanks go to the senior faculty members of the J-PET group. I am especially grateful to Dr. hab. Magdalena Skurzok, Dr. Eryk Czerwiński, Dr. Szymon Niedźwiecki, and Dr. Alessio Porcelli for their mentorship and for providing the resources and scholarly environment necessary to complete this work. Additionally, I would like to thank my colleagues from Warsaw Medical University, the Krakow University Hospital, the Institute of Nuclear Chemistry and Technology, the Heavy Ion Laboratory at the University of Warsaw, the Hevesy Laboratory in the Department of Health Technology at the Technical University of Denmark, and the University of California, Davis for their contributions to this research. I am equally grateful to my friends and colleagues who supported me throughout this journey.</p>
+
+      <p>To my family: thank you for your unwavering support and for being my foundation. To my mother, father, brother, my beloved Dadi, and my late grandfather, thank you for the sacrifices you made to prioritize my education and for always encouraging me to aim higher. I could not have reached this milestone without your love and your constant reminders of what I am capable of achieving.</p>
+
+      <p>Finally, to Akriti, my lifelong partner. Thank you for being my constant motivation and for your endless patience through every deadline and late-night grind. You’ve been the steady light through all the highs and lows of this journey, and this achievement is as much yours as it is mine.</p>
+    </div>
+  </div>
+
+
 <!-- Lightbox Modal -->
 <div id="lightbox"></div>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">  });
 </script>
+
+  
+
+
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() { AOS.init({ once: true, offset: 20 }); }, 100);
