@@ -121,6 +121,10 @@ nav_order: 4
   }
 </style>
 
+<div class="projects-header" data-aos="fade-in" data-aos-duration="1000">
+  <h1 class="phd-title">My PhD Work</h1>
+</div>
+
 <div class="thesis-flow">
   
   <!-- CHAPTER 1 -->
